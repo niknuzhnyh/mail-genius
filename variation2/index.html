@@ -1,82 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <title>MailGenius</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+   <title>MailGenius</title>
 </head>
+
 <body>
 
-<header class="header">
-  <div class="container d-flex align-items-center">
-    <a href="#" class="logo"><img src="/img/MailGenius-logo.png" alt=""></a>
-    <nav class="main-heaader-nav">
-      <a href="#">Email Consulting</a>
-      <a href="#">Contact Us</a>
-    </nav>
-    <nav class="info-header-nav">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Disclaimer</a>
-    </nav>
-  </div>
-  <!-- /.container -->
-</header>
-<!-- /.header -->
-<main class="main">
-  <section class="inner d-flex align-items-center">
-    <div class="container">
-      <div class="inner-call-to-action">
-        <h1 class="call-to-aaction-title">Send emails that don't end up in the spam folder</h1>
-        <p class="call-to-action-text">Find out if your email is likely to trigger spam filters. Run a <span>free</span> email spam and security test in <span>less than one minute</span>.</p>
-        <div class="test-your-email">
-          <!-- <a class="call-to-action-btn btn" href="#">Test your email for  free </a> -->
-          <button class="call-to-action-btn btn">
-            Test your email for  free
-          </button>
-          <div class="email-not-required d-flex align-items-center justify-content-center">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0)">
-              <path d="M4.75526 12.0149L0.205261 7.46494C-0.0680947 7.19159 -0.0680947 6.74837 0.205261 6.47499L1.19519 5.48504C1.46854 5.21166 1.91178 5.21166 2.18514 5.48504L5.25024 8.55011L11.8153 1.98505C12.0887 1.71169 12.5319 1.71169 12.8053 1.98505L13.7952 2.975C14.0686 3.24835 14.0686 3.69157 13.7952 3.96495L5.74521 12.015C5.47183 12.2883 5.02862 12.2883 4.75526 12.0149Z" fill="#36A7B9"/>
-              </g>
-            </svg>
-            <span>
-              No Sign Up Required
-            </span>
-          </div>
-        </div>
+   <header class="header">
+      <div class="container d-flex align-items-center">
+         <div class="logo"><img src="img/MailGenius-logo.png" alt="logo"></div>
+         <nav class="nav--left d-flex">
+            <ul>
+               <li><a href="#">Email Consulting</a></li>
+               <li><a href="#">Contact Us</a></li>
+            </ul>
+         </nav>
+         <nav class="nav--right d-flex">
+            <ul>
+               <li><a href="#">Privacy Policy</a></li>
+               <li><a href="#">Disclaimer</a></li>
+            </ul>
+         </nav>
       </div>
-      <div class="advantages">
-        <p class="advantages-text">
-          Our free email spam checker works with every email provider
-        </p>
+   </header>
+   <div class="main ">
+      <div class="content--wrap">
+         <div class="container">
+            <div class="content">
+               <div class="content--title">
+                  <h1>Send emails that don't end up in the spam folder</h1>
+               </div>
+               <div class="content--text">
+                  <p>Find out if your email is likely to trigger spam filters. Run a <span>free</span> email spam and
+                     security test in <span>less than one minute</span> .</p>
+               </div>
+               <button class="btn">Test your email for free </button>
+               <div class="btn--desc d-flex justify-content-center align-items-center">
+                  <div class="btn--desc__check"><img src="img/check.svg" alt=""></div>
+                  <div class="btn--desc__text">No Sign Up Required</div>
+               </div>
+               <div class="content--advantages">
+                  <p>Our free email spam checker works with every email provider</p>
+               </div>
+            </div>
+            <div class="services d-flex justify-content-space-between fww">
+               <div class="service--item"><a class="service--item__link d-flex align-items-center justify-content-center" href="#"><img src="img/gmail-icon.svg" alt=""></a></div>
+               <div class="service--item"><a class="service--item__link d-flex align-items-center justify-content-center" href="#"><img src="img/salesforce.svg" alt=""></a></div>
+               <div class="service--item"><a class="service--item__link d-flex align-items-center justify-content-center" href="#"><img src="img/hubspot.svg" alt=""></a></div>
+               <div class="service--item"><a class="service--item__link d-flex align-items-center justify-content-center" href="#"><img src="img/mail-climp.svg" alt=""></a></div>
+               <div class="service--item"><a class="service--item__link d-flex align-items-center justify-content-center" href="#"><img src="img/sendgrid.svg" alt=""></a></div>
+               <div class="service--item"><a class="service--item__link d-flex align-items-center justify-content-center" href="#"><img src="img/outlook.svg" alt=""></a></div>
+            </div>
+         </div>
       </div>
-      <div class="inner-servises-list d-flex justify-content-space-between ">
-        <div class="inner-servises-list__item d-flex justify-content-center align-items-center">
-          <img src="img/gmail-icon.svg" alt="">
-        </div>
-        <div class="inner-servises-list__item d-flex justify-content-center align-items-center">
-          <img src="img/salesforce.svg" alt="">
-        </div>
-        <div class="inner-servises-list__item d-flex justify-content-center align-items-center">
-          <img src="img/hubspot.svg" alt="">
-        </div>
-        <div class="inner-servises-list__item d-flex justify-content-center align-items-center">
-          <img src="img/mail-climp.svg" alt="">
-        </div>
-        <div class="inner-servises-list__item d-flex justify-content-center align-items-center">
-          <img src="img/sendgrid.svg" alt="">
-        </div>
-        <div class="inner-servises-list__item d-flex justify-content-center align-items-center">
-          <img src="img/outlook.svg" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-<!-- /.main -->
+   </div>
 
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/main.js"></script>
 </body>
+
 </html>
