@@ -33,7 +33,6 @@ button {
   padding: 0;
 }
 
-
 /* !burger */
 
 .burger{
@@ -105,7 +104,6 @@ button {
 
 /* !burger */
 
-
 .container {
   max-width: 1114px;
   padding: 0 15px;
@@ -145,9 +143,7 @@ button {
   top: 0;
   left: 0;
   padding: 20px 0;
-
   z-index: 2;
-
 }
 .nav--left a,
 .nav--right a{
@@ -258,21 +254,14 @@ button {
 @media only screen and (max-width : 660px) {
 
   .content--wrap {
-
-  .content--wrap{
-
     background-image: none;
   }
   .nav--left ,
   .nav--right {
     display: none;
   }
-
   .burger {
     display: flex;
   }
-
-  
-
 
 }
