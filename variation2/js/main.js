@@ -14,3 +14,13 @@ $(function () {
       /// если скролл больше чем позиция элемента даём body доп класс и задаем элементу следующему за блоком #sticky отступ сверху равный высоте прилипшего блока
    });
 });
+// !burger
+
+$(function () {
+   $('#burger').click(function(){
+      $('#mob-menu').toggleClass('active');
+      $('#burger--item').toggleClass('active');
+   })
+});
+
+// !burger-end

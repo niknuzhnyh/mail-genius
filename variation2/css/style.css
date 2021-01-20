@@ -33,6 +33,77 @@ button {
   padding: 0;
 }
 
+/* !burger */
+
+.burger{
+  height: 30px;
+  width: 30px;
+  transition: all 0.5s;
+  display: none;
+  margin-left: auto;
+}
+
+.burger--item{
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  position: relative;
+  transition: all 0.7s;
+}
+
+.burger--item::before,
+.burger--item::after{
+  content:"";
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  transition: all 0.7s;
+}
+
+.burger--item::before{
+  top: -12px;
+}
+.burger--item::after{
+  top: 12px;;
+}
+.burger--item.active{
+  background-color: transparent ;
+}
+.burger--item.active::before{
+  transform: rotate(45deg);
+  top: 0;
+}
+.burger--item.active::after{
+  transform: rotate(135deg);
+  top: 0;
+}
+
+.mob-menu{
+  padding-top: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #180D5B;
+  z-index: 1;
+  display: none;
+}
+
+.mob-menu.active{
+  display: block;
+}
+
+.mob-link{
+  display: block;
+  color: #fff;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  padding: 20px;
+}
+
+/* !burger */
+
 .container {
   max-width: 1114px;
   padding: 0 15px;
@@ -72,6 +143,7 @@ button {
   top: 0;
   left: 0;
   padding: 20px 0;
+  z-index: 2;
 }
 .nav--left a,
 .nav--right a{
@@ -180,13 +252,15 @@ button {
   }
 }
 @media only screen and (max-width : 660px) {
-  .content--wrap{
+  .content--wrap {
     background-image: none;
   }
   .nav--left ,
   .nav--right {
     display: none;
   }
-  
+  .burger {
+    display: flex;
+  }
 
 }
