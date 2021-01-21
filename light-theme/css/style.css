@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font: 400 14px/1 "PT Sans", sans-serif;
+  margin: 0;
+}
+ul{
+  padding: 0;
+}
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* !burger */
+.burger{
+  height: 30px;
+  width: 30px;
+  transition: all 0.5s;
+  display: none;
+  margin-left: auto;
+}
+.burger--item{
+  width: 30px;
+  height: 3px;
+  background-color: #0257c0;
+  position: relative;
+  transition: all 0.7s;
+}
+.burger--item::before,
+.burger--item::after{
+  content:"";
+  width: 30px;
+  height: 3px;
+  background-color: #0257c0;
+  position: absolute;
+  transition: all 0.7s;
+}
+.burger--item::before{
+  top: -12px;
+}
+.burger--item::after{
+  top: 12px;;
+}
+.burger--item.active{
+  background-color: transparent ;
+}
+.burger--item.active::before{
+  transform: rotate(45deg);
+  top: 0;
+}
+.burger--item.active::after{
+  transform: rotate(135deg);
+  top: 0;
+}
+.mob-menu{
+  padding-top: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(270deg, #00C6FF 0%, #0072FF 101.47%);
+  z-index: 1;
+  display: none;
+}
+.mob-menu.active{
+  display: block;
+}
+.mob-link{
+  display: block;
+  color: #fff;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  padding: 20px;
+}
+/* !burger */
+
+.container {
+  max-width: 1114px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.fww{
+  flex-wrap: wrap;
+}
+
+.btn {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  width: 238px;
+  height: 56px;
+  background: linear-gradient(90deg, #0CEBEB 0%, #20E3B2 50%, #29FFC6 100%);
+  box-shadow: 0px 4px 20px rgba(32, 228, 179, 0.85);
+  border-radius: 30px;
+  }
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px 0;
+  z-index: 2;
+}
+.nav {
+  width: 100%;
+}
+.nav--left {
+  margin-left: 60px;
+  font-weight: bold;
+  line-height: 1.71;
+  color: #fff;
+}
+.nav--right {
+  margin-left: auto;
+  line-height: 1.71;
+  color: #0072FF;
+  ;
+}
+.nav--left li:hover ,
+.nav--right li:hover {
+  transform: scale(1.2);
+}
+.nav--item__link {
+  padding-left: 30px;
+}
+.content--wrap {
+  padding-top: 89px;
+  background: url(/light-theme/img/top-ellipse.svg) 0 0 no-repeat;
+  padding-bottom: 60px;
+}
+.content{
+  max-width: 545px;
+}
+.content--title {
+  padding-top: 53px;
+}
+.content--title h1 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 62px;
+  color: #FFFFFF;
+}
+.content--desc {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 19px;
+}
+.content--desc span {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.content--btn {
+  margin-top: 44px;
+}
+.btn--desc {
+  width: 238px;
+  margin-top: 5px;
+}
+.btn--desc__text{
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.providers {
+  margin-top: 270px;
+}
+.providers--title {
+  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #27DEBF;
+}
+.bgimg--item{
+  max-width: 100%;
+}
+.providers--text {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 47px;
+  color: #29375A;
+}
+.services{
+  justify-content: space-around;
+  max-width: 90%;
+}
+.service--item {
+  width: 180px;
+  height: 180px;
+}
+.service--item__link{
+  margin-top: 28px;
+  width: 164px;
+  height: 164px;
+}
+.service--item__link:hover{
+  background-color: #fff;
+  box-shadow: 0px 4px 20px rgba(32, 228, 179, 0.85);
+}
+
+@media only screen and (max-width : 700px) {
+  .bgimg--item{
+    display: none;
+  }
+  .nav--left ,
+  .nav--right {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width : 400px) {
+  .content--title h1 {
+    font-size: 34px;
+    line-height: 44px;
+  }
+  .providers {
+    margin-top: 115px;
+  }
+}
