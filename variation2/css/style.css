@@ -130,11 +130,12 @@ button {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
-  color: #0f064c;
-  padding: 16px 30px;
-  background-color: #fff;
   font-family: PT Sans;
-  box-shadow: 0px 4px 20px #0f064c;
+  padding: 16px 30px;
+  color: #fff;
+  background: linear-gradient(90deg, #0CEBEB 0%, #20E3B2 50%, #29FFC6 100%);
+  box-shadow: 0px 4px 20px rgba(32, 228, 179, 0.85);
+  border-radius: 30px;
 }
 
 .header {
