@@ -4,7 +4,6 @@
 body {
 	font: 400 14px/1 "PT Sans", sans-serif;
 	margin: 0;
-	background-color: #000;
 }
 ul {
 	padding: 0;
@@ -138,6 +137,7 @@ button {
 	box-shadow: 0px 4px 20px rgba(32, 228, 179, 0.85);
 	border-radius: 30px;
 }
+
 
 /* !main css */
 
