@@ -143,6 +143,10 @@ button {
 
 .header{
 	padding: 28px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
 .nav{
 	width: 100%;
@@ -163,3 +167,77 @@ button {
 	margin-left: 30px;
 }
 
+.main__wrapp{
+	min-height: 100vh;
+	padding-top: 236px;
+	background: url(../img/mail-left.svg) no-repeat 21px 139px,
+	url(../img/l-b-bg.svg) no-repeat 0 561px,
+	url(../img/lt-bg.svg) no-repeat 0 145px,
+	url(../img/mail-right.svg) no-repeat right 161px top 112px,
+	url(../img/rb-bg.svg) no-repeat right 0 top 338px,
+	url(../img/rt-bg.svg) no-repeat right 0 top 105px,
+
+	linear-gradient(270deg, #00C6FF 0%, #0072FF 101.47%);
+}
+
+.call-to-action{
+	flex-direction: column;
+	text-align: center;
+	margin-bottom: 165px;
+}
+
+.call-to-action__heading h1 {
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 1.29;
+	color: #fff;
+	max-width: 545px;
+	margin-bottom: 20px;
+}
+
+.call-to-action__text{
+	font-size: 18px;
+	line-height: 1.33;
+	color: rgba(255, 255, 255, 0.8);
+	max-width: 385px;
+	margin-bottom: 40px;
+}
+
+.call-to-action__text--span{
+	font-weight: bold;
+	color : #fff;
+}
+
+.btn{
+	margin-bottom: 15px;
+}
+
+.call-to-action__btn--desc{
+	line-height: 1.171;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.call-to-action__btn--desc p {
+	margin-left: 14px;
+}
+
+.providers{
+	flex-direction: column;
+	padding-bottom: 80px;
+}
+
+.providers__text{
+	font-size: 16px;
+	line-height: 1.31;
+	color: #fff;
+	margin-bottom: 35px;
+}
+
+.providers__cards{
+	width: 100%;
+	justify-content: space-around;
+}
+
+.providers__card--item{
+	display: block;
+}
